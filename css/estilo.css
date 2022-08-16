@@ -441,3 +441,13 @@ form input {
     margin-bottom: 80px;
   }
 }
+
+/* Animaciones */
+
+a:hover {
+  color: red;
+}
+
+a {
+  transition: color 0.2s linear 0.2s ;
+}
