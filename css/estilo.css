@@ -248,7 +248,7 @@ a:hover {
 }
 
 a {
-  transition: color 0.2s linear 0.2s ;
+  transition: color 0.2s linear 0.2s;
 }
 
 
@@ -275,13 +275,13 @@ a {
   .imgUno {
     width: 100%;
     height: auto;
-    
+
   }
 
   .imgDos {
     width: 100%;
     height: auto;
-    
+
   }
 
   .cajaResponsive {
