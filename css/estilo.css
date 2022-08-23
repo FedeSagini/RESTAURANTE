@@ -9,8 +9,8 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,900&display=swap");
 
-.gridPadre {
-  display: grid;
+.navbar-toggler-icon {
+  color: white;
 }
 
 .flexPadre {
@@ -22,19 +22,10 @@
   justify-items: center;
 }
 
-.menu {
-  grid-area: menu;
-  display: flex;
-  background-color: black;
-  align-items: center;
-  justify-content: space-around;
-}
 
 .title {
   display: flex;
   align-items: center;
-  grid-area: title;
-  padding-right: 178px;
   background-color: black;
 }
 
@@ -46,6 +37,7 @@
 }
 
 .titulo {
+  align-items: center;
   margin-left: 8px;
   font-size: 20px;
   font-weight: 1000;
@@ -59,23 +51,22 @@
   font-size: 55px;
   font-family: "Kanit", sans-serif;
   margin-top: 20px;
-  margin-left: 70px;
+  margin-left: 44px;
 }
 
-.usoDisplay {
+.nav-item {
   display: inline;
   font-size: 20px;
   font-family: "Kanit", sans-serif;
   text-decoration: none;
 }
 
-.usoDisplay a {
+.nav-item a {
   text-decoration: none;
   color: black;
-  margin: 10px;
 }
 
-.barra {
+.navbar-nav {
   display: flex;
   text-align: center;
   justify-content: center;
@@ -93,7 +84,6 @@ a {
 }
 
 .cajaUno {
-  grid-area: divUno;
   display: flex;
   justify-items: end;
   background-image: url(../img/fondo1.jpg);
@@ -101,7 +91,6 @@ a {
 }
 
 .cajaDos {
-  grid-area: divDos;
   display: flex;
   justify-items: end;
   background-image: url(../img/fondo1.jpg);
@@ -120,7 +109,6 @@ a {
   color: white;
   background-color: black;
   padding: 100px 40px 100px 40px;
-  grid-area: division;
 }
 
 .parrafo {
@@ -136,25 +124,15 @@ main {
   flex-direction: column;
 }
 
-.imgUno {
-  grid-area: imgUno;
-}
-
-.imgDos {
-  grid-area: imgDos;
-}
 
 .redes {
   text-align: center;
   font-size: 40px;
   word-spacing: 30px;
-  background-color: black;
   padding: 20px 20px 20px 20px;
 }
 
-footer {
-  grid-area: redes;
-}
+
 
 .derechos {
   text-align: center;
@@ -218,7 +196,6 @@ form input {
   font-family: "Kanit", sans-serif;
   margin-top: 20px;
   text-align: center;
-  grid-area: mainProductos;
 }
 
 .video {
@@ -229,9 +206,7 @@ form input {
 
 /* Ubicación */
 
-.ubi {
-  grid-area: ubi;
-}
+
 
 .ubi h3 {
   font-size: 25px;
@@ -265,51 +240,17 @@ form input {
   text-align: center;
 }
 
-/* GRIDS */
 
-.gridPadreIndex {
-  display: grid;
-  grid-template-areas:
-    "title         "
-    "imgUno"
-    "divUno       "
-    "division    "
-    "imgDos"
-    "divDos       "
-    "redes       ";
+/* Animaciones */
+
+a:hover {
+  color: red;
 }
 
-.gridPadreProductos {
-  display: grid;
-  grid-template-areas:
-    "title"
-    "mainProductos"
-    "redes";
+a {
+  transition: color 0.2s linear 0.2s ;
 }
 
-.gridPadreUbi {
-  display: grid;
-  grid-template-areas:
-    "title"
-    "ubi"
-    "redes";
-}
-
-.gridPadreContacto {
-  display: grid;
-  grid-template-areas:
-    "title"
-    "contactoDos"
-    "redes";
-}
-
-.gridPadreNosotros {
-  display: grid;
-  grid-template-areas:
-    "title"
-    "nosotros"
-    "redes";
-}
 
 @media (max-width: 375px) {
   body {
@@ -331,18 +272,16 @@ form input {
       "redes       ";
   }
 
-  .navegador {
-    display: none;
-  }
-
   .imgUno {
     width: 100%;
     height: auto;
+    
   }
 
   .imgDos {
     width: 100%;
     height: auto;
+    
   }
 
   .cajaResponsive {
@@ -369,85 +308,15 @@ form input {
     width: 80%;
   }
 
+  .navFooter {
+    display: none;
+  }
+
+  .redes {
+    margin-left: 50px;
+  }
+
   p {
     flex-wrap: wrap;
   }
-}
-
-/* Productos*/
-
-@media (max-width: 375px) {
-  body {
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .video {
-    position: relative;
-    padding-bottom: 56.25%;
-    padding-top: 30px;
-    height: 0;
-    overflow: hidden;
-  }
-
-  .video iframe,
-  .video object,
-  .video embed {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-}
-
-/* Ubicacion */
-
-@media (max-width: 375px) {
-  body {
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-}
-
-/* Contacto */
-
-@media (max-width: 375px) {
-  body {
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-}
-
-/* Sobre Nosotros */
-
-@media (max-width: 375px) {
-  body {
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .imgNosotros {
-    width: 100%;
-    margin-top: 10px;
-    margin-bottom: 80px;
-  }
-}
-
-/* Animaciones */
-
-a:hover {
-  color: red;
-}
-
-a {
-  transition: color 0.2s linear 0.2s ;
 }
