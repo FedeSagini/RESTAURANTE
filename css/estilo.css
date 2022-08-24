@@ -13,6 +13,14 @@
   color: white;
 }
 
+.row {
+  --bs-gutter-x: 0;
+}
+
+.cajaResponsive {
+  --bs-gutter-x: 0;
+}
+
 .flexPadre {
   display: flex;
 }
@@ -51,7 +59,7 @@
   font-size: 55px;
   font-family: "Kanit", sans-serif;
   margin-top: 20px;
-  margin-left: 44px;
+  margin-left: 17px;
 }
 
 .nav-item {
@@ -88,6 +96,7 @@ a {
   justify-items: end;
   background-image: url(../img/fondo1.jpg);
   background-size: cover;
+  --bs-gutter-x: 0;
 }
 
 .cajaDos {
@@ -97,9 +106,9 @@ a {
   background-size: cover;
 }
 
-.caja div {
+/* .caja div {
   padding: 70px 70px 70px 70px;
-}
+} */
 
 .division {
   text-align: center;
@@ -116,7 +125,8 @@ a {
   font-family: "Kanit", sans-serif;
   margin-bottom: 20px;
   margin-top: 20px;
-  margin-left: 45px;
+  margin-left: 15px;
+  margin-right: 20px ;
 }
 
 main {
@@ -303,7 +313,7 @@ a {
   }
 
   .subTitulo {
-    text-align: center;
+    text-align: start;
     font-size: 46px;
     width: 80%;
   }
@@ -318,5 +328,77 @@ a {
 
   p {
     flex-wrap: wrap;
+  }
+}
+
+/* Productos*/
+
+@media (max-width: 375px) {
+  body {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .redes {
+    margin-top: 50px;
+  }
+
+  .video {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+  }
+
+  .video iframe,
+  .video object,
+  .video embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* Ubicacion */
+
+@media (max-width: 375px) {
+  body {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* Contacto */
+
+@media (max-width: 375px) {
+  body {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* Sobre Nosotros */
+
+@media (max-width: 375px) {
+  body {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .imgNosotros {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 80px;
   }
 }
