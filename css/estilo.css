@@ -257,6 +257,14 @@ a:hover {
   color: red;
 }
 
+.navColor {
+  background-color: black;
+}
+
+.homeColor a:hover {
+ color: red;
+}
+
 a {
   transition: color 0.2s linear 0.2s;
 }
