@@ -1,385 +1,364 @@
-* {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-}
 @import "variables";
-@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&display=swap');
 
-.navbar-toggler-icon {
-    color: white;
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
+
+@import "maps";
+@import "extend";
+@import "mixin";
 
 .row,
-.cajaResponsive {
-    --bs-gutter-x: 0;
-}
 
 .flexPadre {
-    display: flex;
+  display: flex;
 }
 
 .flexLista {
-    display: flex;
-    justify-items: center;
+  @include display;
 }
 
 .title {
-    display: flex;
-    align-items: center;
-    background-color: $back;
+  display: flex;
+  align-items: center;
+  background-color: $back;
 }
 
 .logo {
-    width: 60px;
-    display: flex;
-    align-items: center;
-    justify-items: start;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-items: start;
 }
 
 .titulo {
-    align-items: center;
-    margin-left: 8px;
-    font-size: 20px;
-    font-weight: 1000;
-    color: #fbf6f2;
-    font-family: Georgia, 'Times New Roman', Times, serif
-    letter-spacing 2px;
+  align-items: center;
+  margin-left: 8px;
+  font-size: 20px;
+  font-weight: 1000;
+  color: #fbf6f2;
+  font-family: Georgia, "Times New Roman", Times, serif letter-spacing 2px;
 }
 
 .subTitulo {
-    text-align: left;
-    font-size: 55px;
-    font-family: $font;
-    margin-top: 20px;
-    margin-left: 17px;
+  text-align: left;
+  font-size: 55px;
+  font-family: $font;
+  margin-top: 20px;
+  margin-left: 17px;
 }
 
 .nav-item {
-    display: inline;
-    font-size: 20px;
-    font-family: $font;
-    text-decoration: none;
+  display: inline;
+  font-size: 20px;
+  font-family: $font;
+  text-decoration: none;
 
-    a {
-        text-decoration: none;
-        color: black;
-    }
+  a {
+    text-decoration: none;
+    color: black;
+  }
 }
 
 .navbar-nav {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    background-color: white;
-    border-radius: 20px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 20px;
 }
 
 .barra li {
-    display: flex;
-    justify-items: center;
+  @include display;
 }
 
 a {
-    text-decoration: none;
-}
-
-.cajaUno {
-    display: flex;
-    justify-items: end;
-    background-image: url(../img/fondo1.jpg);
-    background-size: cover;
-    --bs-gutter-x: 0;
-}
-
-.cajaDos {
-    display: flex;
-    justify-items: end;
-    background-image: url(../img/fondo1.jpg);
-    background-size: cover;
+  text-decoration: none;
 }
 
 .division {
-    text-align: center;
-    font-size: 25px;
-    background-size: cover;
-    font-family: $font;
-    color: white;
-    background-color: $back;
-    padding: 100px 40px 100px 40px;
+  text-align: center;
+  font-size: 25px;
+  background-size: cover;
+  font-family: $font;
+  color: white;
+  background-color: $back;
+  padding: 100px 40px 100px 40px;
 }
 
 .parrafo {
-    font-size: 25px;
-    font-family: $font;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    margin-left: 15px;
-    margin-right: 20px;
+  font-size: 25px;
+  font-family: $font;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-left: 15px;
+  margin-right: 20px;
 }
 
 main {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .redesColor {
-    background-color: $back;
-    background-size: cover;
+  background-color: $back;
+  background-size: cover;
 }
 
 .redes {
-    text-align: center;
-    font-size: 40px;
-    word-spacing: 30px;
-    padding: 20px 20px 20px 20px;
-    
+  text-align: center;
+  font-size: 40px;
+  word-spacing: 30px;
+  padding: 20px 20px 20px 20px;
 }
 
 .derechos {
-    text-align: center;
-    font-size: 16px;
-    color: white;
-    font-family: $font;
-    background-color: $back;
-    padding: 10px 10px 10px 10px;
+  text-align: center;
+  font-size: 16px;
+  color: white;
+  font-family: $font;
+  background-color: $back;
+  padding: 10px 10px 10px 10px;
 }
 
 /* CONTACTO */
 
 .contactoDos h2 {
-    font-size: 22px;
-    text-align: center;
-    font-family: $font;
-    margin-top: 20px;
+  font-size: 22px;
+  text-align: center;
+  font-family: $font;
+  margin-top: 20px;
 }
 
 .imgContacto {
-    text-align: center;
-    margin-bottom: 20px;
-    margin-top: 16px;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 16px;
 }
 
 form {
-
-    label,
-    input {
-        display: block;
-        font-size: 18px;
-        margin-bottom: 10px;
-    }
+  label,
+  input {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
 }
 
 .formCenter {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .boton {
-    background-color: #4caf50;
-    border: none;
-    color: white;
-    padding: 8px 15px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    align-items: center;
-    margin-bottom: 10px;
-    margin-top: 10px;
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 8px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 /* Productos */
 
 .mainProductos h2 {
-    font-size: 27px;
-    font-family: $font;
-    margin-top: 20px;
-    text-align: center;
+  font-size: 27px;
+  font-family: $font;
+  margin-top: 20px;
+  text-align: center;
 }
 
 .video {
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 190px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 190px;
 }
 
 /* Ubicación */
 
 .ubi h3 {
-    font-size: 25px;
-    margin-bottom: 10px;
-    margin-top: 10px;
+  font-size: 25px;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 .mapa {
-    margin: auto;
+  margin: auto;
 }
 
 .ubiDos {
-    font-size: 18px;
-    margin-top: 10px;
-    text-align: center;
-    margin-bottom: 20px;
+  font-size: 18px;
+  margin-top: 10px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 /* Sobre Nosotros */
 
 .nosotros {
-    h2 {
-        font-size: 25px;
-        font-family: $font;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        text-align: center;
-    }
+  h2 {
+    font-size: 25px;
+    font-family: $font;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
 
-    div {
-        margin-bottom: 20px;
-        text-align: center;
-    }
+  div {
+    margin-bottom: 20px;
+    text-align: center;
+  }
 }
 
 /* Animaciones */
 
 a:hover {
-    color: red;
+  color: red;
 }
 
 .navColor {
-    background-color: $back;
+  background-color: $back;
 }
 
 .homeColor a:hover {
-    color: red;
+  color: red;
 }
 
 a {
-    transition: color 0.2s linear 0.2s;
+  transition: color 0.2s linear 0.2s;
 }
 
 @media (max-width: 375px) {
-    body {
-        text-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+  body {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-    .gridPadreIndex {
-        display: grid;
-        grid-template-areas: "title         ""imgUno""divUno       ""division    ""imgDos""divDos       ""redes       ";
-    }
+  .gridPadreIndex {
+    display: grid;
+    grid-template-areas: "title         " "imgUno" "divUno       " "division    " "imgDos" "divDos       " "redes       ";
+  }
 
-    .imgUno,
-    .imgDos {
-        width: 100%;
-        height: auto;
-    }
+  .imgUno,
+  .imgDos {
+    width: 100%;
+    height: auto;
+  }
 
-    .cajaResponsive {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: flex-start;
-    }
+  .cajaResponsive {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
 
-    .cajaUno,
-    .cajaDos {
-        display: flex;
-        text-align: left;
-        flex-direction: column;
-    }
+  .cajaUno,
+  .cajaDos {
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+  }
 
-    .subTitulo {
-        text-align: start;
-        font-size: 46px;
-        width: 80%;
-    }
+  .subTitulo {
+    text-align: start;
+    font-size: 46px;
+    width: 80%;
+  }
 
-    .navFooter {
-        display: none;
-    }
+  .navFooter {
+    display: none;
+  }
 
-    .redes {
-        margin-left: 50px;
-    }
+  .redes {
+    margin-left: 50px;
+  }
 
-    p {
-        flex-wrap: wrap;
-    }
+  p {
+    flex-wrap: wrap;
+  }
 }
 
 /* Productos*/
 
 @media (max-width: 375px) {
-    body {
-        text-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+  body {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-    .redes {
-        margin-top: 50px;
-    }
+  .redes {
+    margin-top: 50px;
+  }
 
-    .video {
-        position: relative;
-        padding-bottom: 56.25%;
-        padding-top: 30px;
-        height: 0;
-        overflow: hidden;
+  .video {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
 
-        iframe,
-        object,
-        embed {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
+    iframe,
+    object,
+    embed {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
     }
+  }
 }
 
 /* Ubicacion */
 
 @media (max-width: 375px) {
-    body {
-        text-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+  body {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 /* Contacto */
 
 @media (max-width: 375px) {
-    body {
-        text-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+  body {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 /* Sobre Nosotros */
 
 @media (max-width: 375px) {
-    body {
-        text-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+  body {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-    .imgNosotros {
-        width: 100%;
-        margin-top: 10px;
-        margin-bottom: 80px;
-    }
+  .imgNosotros {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 80px;
+  }
 }

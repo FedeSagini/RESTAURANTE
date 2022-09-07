@@ -1,0 +1,8 @@
+
+$estilo: (background-color:$back, font-family: $font);
+
+.mapGet {
+    background-color: map-get($estilo, background-color );
+    font-family: map-get($estilo, font-family);
+}
+
