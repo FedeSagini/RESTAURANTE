@@ -1,11 +1,11 @@
 .cajaUno {
-    display: flex;
-    justify-items: end;
-    background-image: url(../img/fondo1.jpg);
-    background-size: cover;
-    --bs-gutter-x: 0;
-  }
+  display: flex;
+  justify-items: end;
+  background-image: url(../img/fondo1.jpg);
+  background-size: cover;
+  --bs-gutter-x: 0;
+}
 
-  .cajaDos {
-    @extend .cajaUno;
-  }
+.cajaDos {
+  @extend .cajaUno;
+}

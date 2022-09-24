@@ -19,6 +19,15 @@
   background-size: cover;
   --bs-gutter-x: 0; }
 
+.mainProductos {
+  min-height: calc(100vh - 116px - 60px); }
+
+.nosotros {
+  min-height: calc(100vh - 156px - 90px); }
+
+.mainContacto {
+  min-height: calc(100vh - 200px); }
+
 .row,
 .flexPadre {
   display: flex; }
@@ -103,6 +112,7 @@ main {
 
 .redes {
   text-align: center;
+  justify-items: center;
   font-size: 40px;
   word-spacing: 30px;
   padding: 20px 20px 20px 20px; }
@@ -168,6 +178,9 @@ form input {
   margin-bottom: 10px;
   margin-top: 10px; }
 
+.ubiAltura {
+  min-height: 85vh; }
+
 .mapa {
   margin: auto; }
 
@@ -202,7 +215,7 @@ a:hover {
 a {
   transition: color 0.2s linear 0.2s; }
 
-@media (max-width: 375px) {
+@media (max-width: 699px) {
   body {
     text-align: center;
     display: flex;
@@ -227,23 +240,27 @@ a {
   .subTitulo {
     text-align: start;
     font-size: 46px;
-    width: 80%; }
+    width: 80%;
+    margin-top: -40px; }
   .navFooter {
     display: none; }
   .redes {
-    margin-left: 50px; }
+    margin-left: 50px;
+    justify-items: center; }
+  .divUno {
+    margin-bottom: 30px; }
+  .divDos {
+    margin-bottom: 30px; }
   p {
     flex-wrap: wrap; } }
 
 /* Productos*/
-@media (max-width: 375px) {
+@media (max-width: 699px) {
   body {
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center; }
-  .redes {
-    margin-top: 50px; }
   .video {
     position: relative;
     padding-bottom: 56.25%;
@@ -260,7 +277,7 @@ a {
       height: 100%; } }
 
 /* Ubicacion */
-@media (max-width: 375px) {
+@media (max-width: 699px) {
   body {
     text-align: center;
     display: flex;
@@ -268,7 +285,7 @@ a {
     justify-content: center; } }
 
 /* Contacto */
-@media (max-width: 375px) {
+@media (max-width: 699px) {
   body {
     text-align: center;
     display: flex;
@@ -276,7 +293,61 @@ a {
     justify-content: center; } }
 
 /* Sobre Nosotros */
-@media (max-width: 375px) {
+@media (max-width: 699px) {
+  body {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .imgAltura {
+    margin-bottom: 30px; }
+  .imgAlturaDos {
+    margin-bottom: 30px; }
+  .imgNosotros {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 80px; } }
+
+/* Productos*/
+@media (max-width: 1068px) {
+  body {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .video {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden; }
+    .video iframe,
+    .video object,
+    .video embed {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; } }
+
+/* Ubicacion */
+@media (max-width: 1068px) {
+  body {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center; } }
+
+/* Contacto */
+@media (max-width: 1068px) {
+  body {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center; } }
+
+/* Sobre Nosotros */
+@media (max-width: 1068px) {
   body {
     text-align: center;
     display: flex;
